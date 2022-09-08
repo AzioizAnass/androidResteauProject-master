@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.ConfirmEmail">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="Verification"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:text="@string/otp_code_text"
+            android:textColor="@color/orange"
+            android:textSize="100sp"
+            android:padding="0dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/josefin_sans_semibold"
+            android:text="Veuillez saisir le code OTP"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.chaos.view.PinView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="6"
+            app:itemWidth="50dp"
+            app:itemHeight="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:lineColor="@color/black"
+            style="@style/PinWidget.PinView"
+            android:inputType="number"
+            android:cursorVisible="true"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemRadius="5dp"
+            android:id="@+id/code1"/>
+        <Button
+            android:id="@+id/conff1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:text="Vérifier"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</ScrollView>

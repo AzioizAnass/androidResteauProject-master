@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="12dp">
+    <TextView
+        android:id="@+id/dateHistorique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12-12-2019 | 20:34 "
+        android:layout_marginHorizontal="12dp"/>
+    <TextView
+        android:id="@+id/nomPlatHistorique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tacos"
+        android:layout_marginHorizontal="12dp"/>
+
+    <TextView
+        android:id="@+id/prixHistorique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39DH "
+        android:layout_marginHorizontal="12dp"/>
+</LinearLayout>

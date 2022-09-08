@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Paiement">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Configurez votre carte de paiement"
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/allerta"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/tvCommande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commnade"
+                android:textSize="26dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/allerta"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Nom sur la carte"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/darker_gray"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/custom_username_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Numéro de la carte"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/darker_gray"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/custom_card_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Date d'expiration (MM/YY)"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/darker_gray"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/custom_card_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Cryptogrammme CCV"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/darker_gray"
+                app:hintTextColor="@color/black"
+                app:startIconDrawable="@drawable/custom_card_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/confirmerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Confirmer"
+                    android:textColor="#000" />
+                <Button
+                    android:id="@+id/annulerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_bg"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Annuler"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            app:menu="@menu/bottom_va" />
+    </LinearLayout>
+
+</LinearLayout>
